@@ -12,4 +12,4 @@ echo "running entrypoint command(s)"
 
 response=$(sh -c " $*")
 
-echo "::set-output name=response::$response"
+echo "response=$response" >> $GITHUV_ENV
