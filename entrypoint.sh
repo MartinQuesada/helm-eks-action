@@ -12,4 +12,4 @@ echo "running entrypoint command(s)"
 
 response=$(sh -c " $*")
 
-echo "response=$response" >> $GITHUV_ENV
+echo "response=$response" >> $GITHUB_ENV
