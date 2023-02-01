@@ -14,7 +14,7 @@
 
 FROM alpine/k8s:1.26.1
 
-RUN apk add py-pip curl wget ca-certificates git bash jq gcc alpine-sdk
+RUN apk add py-pip curl wget ca-certificates git bash jq gcc alpine-sdk sh
 
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
