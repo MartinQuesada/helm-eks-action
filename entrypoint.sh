@@ -10,6 +10,6 @@ export KUBECONFIG="${PWD}/kubeconfig"
 
 echo "running entrypoint command(s)"
 
-response=$(sh -c " $*")
+response=$(bash -c " $*")
 
 echo "response=$response" >> $GITHUB_ENV
